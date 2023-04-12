@@ -1,12 +1,734 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/16efdaabba.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/Favicon.png">
+    <title>Pinterest</title>
 </head>
+
 <body>
-    <h1>Hola mundo</h1>
+    <header>
+        <nav id="navbar-pinterest">
+            <div id="pinterest-icon"> <a href="https://www.pinterest.com.mx/"><img src="img/logo G.png" alt="logo"
+                        class="logo"></div></a>
+            <a href="index.html" class="button-home">Home</a>
+            <div class="create-button"><a href="index.html" class="button-create">Create</a>
+                <svg class="gUZ ztu U9O kVc" style="color: rgb(18, 18, 18);" height="15" width="15"
+                    viewBox="0 -4 24 25">
+                    <path
+                        d="M12 19.5.66 8.29c-.88-.86-.88-2.27 0-3.14.88-.87 2.3-.87 3.18 0L12 13.21l8.16-8.06c.88-.87 2.3-.87 3.18 0 .88.87.88 2.28 0 3.14L12 19.5z">
+                    </path>
+                </svg>
+            </div>
+            <input class="finder" type="text" placeholder="Search">
+            <input class="finder-query" type="text" placeholder="">
+            <div class="icons-bar">
+
+                <div id="notifications"><svg class="svg-icon" height="25" width="25" viewBox="0 0 24 24"
+                        aria-hidden="true" aria-label="" role="img">
+                        <path fill="#545454"
+                            d="M12 24c-1.66 0-3-1.34-3-3h6c0 1.66-1.34 3-3 3zm7-10.83c1.58 1.52 2.67 3.55 3 5.83H2c.33-2.28 1.42-4.31 3-5.83V7c0-3.87 3.13-7 7-7s7 3.13 7 7v6.17z">
+                        </path>
+                    </svg>
+                </div>
+                <div id="message"><svg class="svg-icon" height="24" width="24" viewBox="0 0 24 24" aria-hidden="true"
+                        aria-label="" role="img" style="padding-left: 8px;">
+                        <path fill="#545454"
+                            d="M18 12.5a1.5 1.5 0 1 1 .001-3.001A1.5 1.5 0 0 1 18 12.5m-6 0a1.5 1.5 0 1 1 .001-3.001A1.5 1.5 0 0 1 12 12.5m-6 0a1.5 1.5 0 1 1 .001-3.001A1.5 1.5 0 0 1 6 12.5M12 0C5.925 0 1 4.925 1 11c0 2.653.94 5.086 2.504 6.986L2 24l5.336-3.049A10.93 10.93 0 0 0 12 22c6.075 0 11-4.925 11-11S18.075 0 12 0">
+                        </path>
+                    </svg>
+
+                </div>
+
+                <div id="profile-img"><img src="img/A.svg" alt="icon a" width="28px" height="25px"
+                        style="padding-left: 8px;"></div>
+
+                <div id="icon-der"><svg class="svg-icon" height="12" width="12" viewBox="0 0 24 24" aria-hidden="true"
+                        aria-label="" role="img">
+                        <path fill="#545454"
+                            d="M12 19.5.66 8.29c-.88-.86-.88-2.27 0-3.14.88-.87 2.3-.87 3.18 0L12 13.21l8.16-8.06c.88-.87 2.3-.87 3.18 0 .88.87.88 2.28 0 3.14L12 19.5z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="content">
+
+
+<div class="container-general">
+
+<div class="question-sign">
+    <svg class="gUZ R19 U9O kVc" height="25" width="25" viewBox="0 0 24 24" aria-hidden="true" aria-label="" role="img"><path d="M14.34 21.2c0 1.57-1.19 2.8-2.78 2.8-1.58 0-2.77-1.23-2.77-2.8 0-1.57 1.19-2.8 2.77-2.8 1.59 0 2.78 1.23 2.78 2.8m-2.53-10.88c1.41-1.23 3.3-2.05 3.3-3.87 0-1.45-1.24-2.36-2.95-2.36-2.12 0-3.52 1.48-3.55 3.43H3.75C3.88 3.3 6.96 0 12.34 0c4.86 0 7.91 2.52 7.91 6.32 0 2.36-1.09 3.81-2.3 4.78-1.68 1.33-2.84 1.89-3.49 2.61-.5.57-.62 1.04-.65 1.95H9.45c0-2.64.65-3.9 2.36-5.34"></path></svg>
+</div>
+
+        <div class="card-image" id="normal">
+            <div class="card-info" id="normal" >
+                <div class="card-info-top">
+                    <p>Profile</p>
+                    <p style="font-size: 25px; margin-top: 20px; margin-left: -40px;">⌵</p>
+                    <a>Save</a>
+                </div>
+                <div class="card-info-bottom">
+                    <a>↗ google.com</a>
+                    <img draggable="false"
+                        src="https://cdn3.iconfinder.com/data/icons/iconset-1-1/24/icon_set_outlinder-10-256.png">
+                    <img draggable="false" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-more-256.png">
+                </div>
+            </div>
+            <img class="photo"
+            src="https://images.pexels.com/photos/163452/basketball-dunk-blue-game-163452.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="imagen1">
+        </div>
+        <div class="card-image" id="large">
+            <div class="card-info" id="large">
+                <div class="card-info-top">
+                    <p>Profile</p>
+                    <p style="font-size: 25px; margin-top: 20px; margin-left: -40px;">⌵</p>
+                    <a>Save</a>
+                </div>
+                <div class="card-info-bottom">
+                    <a>↗ google.com</a>
+                    <img draggable="false"
+                        src="https://cdn3.iconfinder.com/data/icons/iconset-1-1/24/icon_set_outlinder-10-256.png">
+                    <img draggable="false" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-more-256.png">
+                </div>
+            </div>
+            <img class="photo" src="https://images.pexels.com/photos/1103829/pexels-photo-1103829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="imagen3">
+        </div>
+        <div class="card-image" id="short">
+            <div class="card-info" id="short" >
+                <div class="card-info-top">
+                    <p>Profile</p>
+                    <p style="font-size: 25px; margin-top: 20px; margin-left: -40px;">⌵</p>
+                    <a>Save</a>
+                </div>
+                <div class="card-info-bottom">
+                    <a>↗ google.com</a>
+                    <img draggable="false"
+                        src="https://cdn3.iconfinder.com/data/icons/iconset-1-1/24/icon_set_outlinder-10-256.png">
+                    <img draggable="false" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-more-256.png">
+                </div>
+            </div>
+            <img class="photo" src="https://images.pexels.com/photos/1349513/pexels-photo-1349513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="imagen29">
+        </div>
+        <div class="card-image" id="normal">
+            <div class="card-info" id="normal" >
+                <div class="card-info-top">
+                    <p>Profile</p>
+                    <p style="font-size: 25px; margin-top: 20px; margin-left: -40px;">⌵</p>
+                    <a>Save</a>
+                </div>
+                <div class="card-info-bottom">
+                    <a>↗ google.com</a>
+                    <img draggable="false"
+                        src="https://cdn3.iconfinder.com/data/icons/iconset-1-1/24/icon_set_outlinder-10-256.png">
+                    <img draggable="false" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-more-256.png">
+                </div>
+            </div>
+            <img class="photo"
+            src="https://images.pexels.com/photos/207714/pexels-photo-207714.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="imagen5">
+        </div>
+        <div class="card-image" id="large">
+            <div class="card-info" id="large">
+                <div class="card-info-top">
+                    <p>Profile</p>
+                    <p style="font-size: 25px; margin-top: 20px; margin-left: -40px;">⌵</p>
+                    <a>Save</a>
+                </div>
+                <div class="card-info-bottom">
+                    <a>↗ google.com</a>
+                    <img draggable="false"
+                        src="https://cdn3.iconfinder.com/data/icons/iconset-1-1/24/icon_set_outlinder-10-256.png">
+                    <img draggable="false" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-more-256.png">
+                </div>
+            </div>
+            <img class="photo" src="https://images.pexels.com/photos/3148452/pexels-photo-3148452.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="imagen7">
+        </div>
+        <div class="card-image" id="short">
+            <div class="card-info" id="short" >
+                <div class="card-info-top">
+                    <p>Profile</p>
+                    <p style="font-size: 25px; margin-top: 20px; margin-left: -40px;">⌵</p>
+                    <a>Save</a>
+                </div>
+                <div class="card-info-bottom">
+                    <a>↗ google.com</a>
+                    <img draggable="false"
+                        src="https://cdn3.iconfinder.com/data/icons/iconset-1-1/24/icon_set_outlinder-10-256.png">
+                    <img draggable="false" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-more-256.png">
+                </div>
+            </div>
+            <img class="photo"    src="https://images.pexels.com/photos/163439/football-american-football-quarterback-runner-163439.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="imagen4">
+        </div>
+        <div class="card-image" id="normal">
+            <div class="card-info" id="normal" >
+                <div class="card-info-top">
+                    <p>Profile</p>
+                    <p style="font-size: 25px; margin-top: 20px; margin-left: -40px;">⌵</p>
+                    <a>Save</a>
+                </div>
+                <div class="card-info-bottom">
+                    <a>↗ google.com</a>
+                    <img draggable="false"
+                        src="https://cdn3.iconfinder.com/data/icons/iconset-1-1/24/icon_set_outlinder-10-256.png">
+                    <img draggable="false" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-more-256.png">
+                </div>
+            </div>
+            <img class="photo"
+            src="https://images.pexels.com/photos/2834917/pexels-photo-2834917.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="imagen2">
+        </div>
+
+
+
+        <div class="card-image" id="large">
+            <div class="card-info" id="large">
+                <div class="card-info-top">
+                    <p>Profile</p>
+                    <p style="font-size: 25px; margin-top: 20px; margin-left: -40px;">⌵</p>
+                    <a>Save</a>
+                </div>
+                <div class="card-info-bottom">
+                    <a>↗ google.com</a>
+                    <img draggable="false"
+                        src="https://cdn3.iconfinder.com/data/icons/iconset-1-1/24/icon_set_outlinder-10-256.png">
+                    <img draggable="false" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-more-256.png">
+                </div>
+            </div>
+            <img class="photo" src="https://images.pexels.com/photos/2834914/pexels-photo-2834914.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="imagen6">
+        </div>
+        <div class="card-image" id="short">
+            <div class="card-info" id="short" >
+                <div class="card-info-top">
+                    <p>Profile</p>
+                    <p style="font-size: 25px; margin-top: 20px; margin-left: -40px;">⌵</p>
+                    <a>Save</a>
+                </div>
+                <div class="card-info-bottom">
+                    <a>↗ google.com</a>
+                    <img draggable="false"
+                        src="https://cdn3.iconfinder.com/data/icons/iconset-1-1/24/icon_set_outlinder-10-256.png">
+                    <img draggable="false" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-more-256.png">
+                </div>
+            </div>
+            <img class="photo" src="https://images.pexels.com/photos/4789457/pexels-photo-4789457.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="imagen28">
+        </div>
+        <div class="card-image" id="normal" >
+            <div class="card-info" id="normal" >
+                <div class="card-info-top">
+                    <p>Profile</p>
+                    <p style="font-size: 25px; margin-top: 20px; margin-left: -40px;">⌵</p>
+                    <a>Save</a>
+                </div>
+                <div class="card-info-bottom">
+                    <a>↗ google.com</a>
+                    <img draggable="false"
+                        src="https://cdn3.iconfinder.com/data/icons/iconset-1-1/24/icon_set_outlinder-10-256.png">
+                    <img draggable="false" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-more-256.png">
+                </div>
+            </div>
+            <img class="photo"
+            src="https://images.pexels.com/photos/47356/freerider-skiing-ski-sports-47356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="imagen27">
+        </div>
+        <div class="card-image" id="large" >
+            <div class="card-info" id="large">
+                <div class="card-info-top">
+                    <p>Profile</p>
+                    <p style="font-size: 25px; margin-top: 20px; margin-left: -40px;">⌵</p>
+                    <a>Save</a>
+                </div>
+                <div class="card-info-bottom">
+                    <a>↗ google.com</a>
+                    <img draggable="false"
+                        src="https://cdn3.iconfinder.com/data/icons/iconset-1-1/24/icon_set_outlinder-10-256.png">
+                    <img draggable="false" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-more-256.png">
+                </div>
+            </div>
+            <img class="photo" src="https://images.pexels.com/photos/73760/swimming-swimmer-female-race-73760.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="imagen26">
+        </div>
+        <div class="card-image" id="short">
+            <div class="card-info" id="short" >
+                <div class="card-info-top">
+                    <p>Profile</p>
+                    <p style="font-size: 25px; margin-top: 20px; margin-left: -40px;">⌵</p>
+                    <a>Save</a>
+                </div>
+                <div class="card-info-bottom">
+                    <a>↗ google.com</a>
+                    <img draggable="false"
+                        src="https://cdn3.iconfinder.com/data/icons/iconset-1-1/24/icon_set_outlinder-10-256.png">
+                    <img draggable="false" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-more-256.png">
+                </div>
+            </div>
+            <img class="photo" src="https://images.pexels.com/photos/1524620/pexels-photo-1524620.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="imagen25">
+        </div>
+        <div class="card-image" id="normal" >
+            <div class="card-info" id="normal" >
+                <div class="card-info-top">
+                    <p>Profile</p>
+                    <p style="font-size: 25px; margin-top: 20px; margin-left: -40px;">⌵</p>
+                    <a>Save</a>
+                </div>
+                <div class="card-info-bottom">
+                    <a>↗ google.com</a>
+                    <img draggable="false"
+                        src="https://cdn3.iconfinder.com/data/icons/iconset-1-1/24/icon_set_outlinder-10-256.png">
+                    <img draggable="false" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-more-256.png">
+                </div>
+            </div>
+            <img class="photo"
+            src="https://images.pexels.com/photos/2475108/pexels-photo-2475108.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="imagen24">
+        </div>
+        <div class="card-image" id="large" >
+            <div class="card-info" id="large">
+                <div class="card-info-top">
+                    <p>Profile</p>
+                    <p style="font-size: 25px; margin-top: 20px; margin-left: -40px;">⌵</p>
+                    <a>Save</a>
+                </div>
+                <div class="card-info-bottom">
+                    <a>↗ google.com</a>
+                    <img draggable="false"
+                        src="https://cdn3.iconfinder.com/data/icons/iconset-1-1/24/icon_set_outlinder-10-256.png">
+                    <img draggable="false" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-more-256.png">
+                </div>
+            </div>
+            <img class="photo" src="https://images.pexels.com/photos/2820906/pexels-photo-2820906.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="imagen23">
+        </div>
+
+
+
+
+        <div class="card-image" id="short">
+            <div class="card-info" id="short" >
+                <div class="card-info-top">
+                    <p>Profile</p>
+                    <p style="font-size: 25px; margin-top: 20px; margin-left: -40px;">⌵</p>
+                    <a>Save</a>
+                </div>
+                <div class="card-info-bottom">
+                    <a>↗ google.com</a>
+                    <img draggable="false"
+                        src="https://cdn3.iconfinder.com/data/icons/iconset-1-1/24/icon_set_outlinder-10-256.png">
+                    <img draggable="false" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-more-256.png">
+                </div>
+            </div>
+            <img class="photo" src="https://images.pexels.com/photos/1748599/pexels-photo-1748599.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="imagen22">
+        </div>
+        <div class="card-image" id="normal" >
+            <div class="card-info" id="normal" >
+                <div class="card-info-top">
+                    <p>Profile</p>
+                    <p style="font-size: 25px; margin-top: 20px; margin-left: -40px;">⌵</p>
+                    <a>Save</a>
+                </div>
+                <div class="card-info-bottom">
+                    <a>↗ google.com</a>
+                    <img draggable="false"
+                        src="https://cdn3.iconfinder.com/data/icons/iconset-1-1/24/icon_set_outlinder-10-256.png">
+                    <img draggable="false" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-more-256.png">
+                </div>
+            </div>
+            <img class="photo"
+            src="https://images.pexels.com/photos/703012/pexels-photo-703012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="imagen21">
+        </div>
+        <div class="card-image" id="large" >
+            <div class="card-info" id="large">
+                <div class="card-info-top">
+                    <p>Profile</p>
+                    <p style="font-size: 25px; margin-top: 20px; margin-left: -40px;">⌵</p>
+                    <a>Save</a>
+                </div>
+                <div class="card-info-bottom">
+                    <a>↗ google.com</a>
+                    <img draggable="false"
+                        src="https://cdn3.iconfinder.com/data/icons/iconset-1-1/24/icon_set_outlinder-10-256.png">
+                    <img draggable="false" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-more-256.png">
+                </div>
+            </div>
+            <img class="photo" src="https://images.pexels.com/photos/267761/pexels-photo-267761.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="imagen19">
+        </div>
+        <div class="card-image" id="short">
+            <div class="card-info" id="short" >
+                <div class="card-info-top">
+                    <p>Profile</p>
+                    <p style="font-size: 25px; margin-top: 20px; margin-left: -40px;">⌵</p>
+                    <a>Save</a>
+                </div>
+                <div class="card-info-bottom">
+                    <a>↗ google.com</a>
+                    <img draggable="false"
+                        src="https://cdn3.iconfinder.com/data/icons/iconset-1-1/24/icon_set_outlinder-10-256.png">
+                    <img draggable="false" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-more-256.png">
+                </div>
+            </div>
+            <img class="photo" src="https://images.pexels.com/photos/1656306/pexels-photo-1656306.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="imagen18">
+        </div>
+        <div class="card-image" id="normal" >
+            <div class="card-info" id="normal" >
+                <div class="card-info-top">
+                    <p>Profile</p>
+                    <p style="font-size: 25px; margin-top: 20px; margin-left: -40px;">⌵</p>
+                    <a>Save</a>
+                </div>
+                <div class="card-info-bottom">
+                    <a>↗ google.com</a>
+                    <img draggable="false"
+                        src="https://cdn3.iconfinder.com/data/icons/iconset-1-1/24/icon_set_outlinder-10-256.png">
+                    <img draggable="false" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-more-256.png">
+                </div>
+            </div>
+            <img class="photo"
+            src="https://images.pexels.com/photos/163452/basketball-dunk-blue-game-163452.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="imagen1">
+        </div>
+        <div class="card-image" id="large" >
+            <div class="card-info" id="large">
+                <div class="card-info-top">
+                    <p>Profile</p>
+                    <p style="font-size: 25px; margin-top: 20px; margin-left: -40px;">⌵</p>
+                    <a>Save</a>
+                </div>
+                <div class="card-info-bottom">
+                    <a>↗ google.com</a>
+                    <img draggable="false"
+                        src="https://cdn3.iconfinder.com/data/icons/iconset-1-1/24/icon_set_outlinder-10-256.png">
+                    <img draggable="false" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-more-256.png">
+                </div>
+            </div>
+            <img class="photo" src="https://images.pexels.com/photos/6540720/pexels-photo-6540720.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="imagen30">
+        </div>
+        <div class="card-image" id="short">
+            <div class="card-info" id="short" >
+                <div class="card-info-top">
+                    <p>Profile</p>
+                    <p style="font-size: 25px; margin-top: 20px; margin-left: -40px;">⌵</p>
+                    <a>Save</a>
+                </div>
+                <div class="card-info-bottom">
+                    <a>↗ google.com</a>
+                    <img draggable="false"
+                        src="https://cdn3.iconfinder.com/data/icons/iconset-1-1/24/icon_set_outlinder-10-256.png">
+                    <img draggable="false" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-more-256.png">
+                </div>
+            </div>
+            <img class="photo" src="https://images.pexels.com/photos/949126/pexels-photo-949126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="imagen20">
+        </div>
+
+
+
+        <div class="card-image" id="normal">
+            <div class="card-info" id="normal" >
+                <div class="card-info-top">
+                    <p>Profile</p>
+                    <p style="font-size: 25px; margin-top: 20px; margin-left: -40px;">⌵</p>
+                    <a>Save</a>
+                </div>
+                <div class="card-info-bottom">
+                    <a>↗ google.com</a>
+                    <img draggable="false"
+                        src="https://cdn3.iconfinder.com/data/icons/iconset-1-1/24/icon_set_outlinder-10-256.png">
+                    <img draggable="false" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-more-256.png">
+                </div>
+            </div>
+            <img class="photo"
+            src="https://images.pexels.com/photos/3680104/pexels-photo-3680104.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="imagen17">
+        </div>
+        <div class="card-image" id="large">
+            <div class="card-info" id="large">
+                <div class="card-info-top">
+                    <p>Profile</p>
+                    <p style="font-size: 25px; margin-top: 20px; margin-left: -40px;">⌵</p>
+                    <a>Save</a>
+                </div>
+                <div class="card-info-bottom">
+                    <a>↗ google.com</a>
+                    <img draggable="false"
+                        src="https://cdn3.iconfinder.com/data/icons/iconset-1-1/24/icon_set_outlinder-10-256.png">
+                    <img draggable="false" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-more-256.png">
+                </div>
+            </div>
+            <img class="photo" src="https://images.pexels.com/photos/4324017/pexels-photo-4324017.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="imagen16">
+        </div>
+        <div class="card-image" id="short">
+            <div class="card-info" id="short" >
+                <div class="card-info-top">
+                    <p>Profile</p>
+                    <p style="font-size: 25px; margin-top: 20px; margin-left: -40px;">⌵</p>
+                    <a>Save</a>
+                </div>
+                <div class="card-info-bottom">
+                    <a>↗ google.com</a>
+                    <img draggable="false"
+                        src="https://cdn3.iconfinder.com/data/icons/iconset-1-1/24/icon_set_outlinder-10-256.png">
+                    <img draggable="false" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-more-256.png">
+                </div>
+            </div>
+            <img class="photo" src="https://images.pexels.com/photos/1637731/pexels-photo-1637731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="imagen15">
+        </div>
+        <div class="card-image" id="normal">
+            <div class="card-info" id="normal" >
+                <div class="card-info-top">
+                    <p>Profile</p>
+                    <p style="font-size: 25px; margin-top: 20px; margin-left: -40px;">⌵</p>
+                    <a>Save</a>
+                </div>
+                <div class="card-info-bottom">
+                    <a>↗ google.com</a>
+                    <img draggable="false"
+                        src="https://cdn3.iconfinder.com/data/icons/iconset-1-1/24/icon_set_outlinder-10-256.png">
+                    <img draggable="false" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-more-256.png">
+                </div>
+            </div>
+            <img class="photo"
+            src="https://images.pexels.com/photos/1263349/pexels-photo-1263349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="imagen14">
+        </div>
+        <div class="card-image" id="large">
+            <div class="card-info" id="large">
+                <div class="card-info-top">
+                    <p>Profile</p>
+                    <p style="font-size: 25px; margin-top: 20px; margin-left: -40px;">⌵</p>
+                    <a>Save</a>
+                </div>
+                <div class="card-info-bottom">
+                    <a>↗ google.com</a>
+                    <img draggable="false"
+                        src="https://cdn3.iconfinder.com/data/icons/iconset-1-1/24/icon_set_outlinder-10-256.png">
+                    <img draggable="false" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-more-256.png">
+                </div>
+            </div>
+            <img class="photo" src="https://images.pexels.com/photos/207688/pexels-photo-207688.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="imagen13">
+        </div>
+        <div class="card-image" id="short">
+            <div class="card-info" id="short" >
+                <div class="card-info-top">
+                    <p>Profile</p>
+                    <p style="font-size: 25px; margin-top: 20px; margin-left: -40px;">⌵</p>
+                    <a>Save</a>
+                </div>
+                <div class="card-info-bottom">
+                    <a>↗ google.com</a>
+                    <img draggable="false"
+                        src="https://cdn3.iconfinder.com/data/icons/iconset-1-1/24/icon_set_outlinder-10-256.png">
+                    <img draggable="false" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-more-256.png">
+                </div>
+            </div>
+            <img class="photo" src="https://images.pexels.com/photos/70567/boxing-ring-boxers-fight-70567.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="imagen12">
+        </div>
+        <div class="card-image" id="normal">
+            <div class="card-info" id="normal" >
+                <div class="card-info-top">
+                    <p>Profile</p>
+                    <p style="font-size: 25px; margin-top: 20px; margin-left: -40px;">⌵</p>
+                    <a>Save</a>
+                </div>
+                <div class="card-info-bottom">
+                    <a>↗ google.com</a>
+                    <img draggable="false"
+                        src="https://cdn3.iconfinder.com/data/icons/iconset-1-1/24/icon_set_outlinder-10-256.png">
+                    <img draggable="false" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-more-256.png">
+                </div>
+            </div>
+            <img class="photo"
+            src="https://images.pexels.com/photos/566643/pexels-photo-566643.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="imagen11">
+        </div>
+
+
+
+
+
+
+
+        <div class="card-image" id="large" >
+            <div class="card-info" id="large">
+                <div class="card-info-top">
+                    <p>Profile</p>
+                    <p style="font-size: 25px; margin-top: 20px; margin-left: -40px;">⌵</p>
+                    <a>Save</a>
+                </div>
+                <div class="card-info-bottom">
+                    <a>↗ google.com</a>
+                    <img draggable="false"
+                        src="https://cdn3.iconfinder.com/data/icons/iconset-1-1/24/icon_set_outlinder-10-256.png">
+                    <img draggable="false" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-more-256.png">
+                </div>
+            </div>
+            <img class="photo" src="https://images.pexels.com/photos/2207/red-people-outside-sport.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="imagen10">
+        </div>
+        <div class="card-image" id="short">
+            <div class="card-info" id="short" >
+                <div class="card-info-top">
+                    <p>Profile</p>
+                    <p style="font-size: 25px; margin-top: 20px; margin-left: -40px;">⌵</p>
+                    <a>Save</a>
+                </div>
+                <div class="card-info-bottom">
+                    <a>↗ google.com</a>
+                    <img draggable="false"
+                        src="https://cdn3.iconfinder.com/data/icons/iconset-1-1/24/icon_set_outlinder-10-256.png">
+                    <img draggable="false" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-more-256.png">
+                </div>
+            </div>
+            <img class="photo" src="https://images.pexels.com/photos/1349513/pexels-photo-1349513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="imagen29">
+        </div>
+        <div class="card-image" id="normal" >
+            <div class="card-info" id="normal" >
+                <div class="card-info-top">
+                    <p>Profile</p>
+                    <p style="font-size: 25px; margin-top: 20px; margin-left: -40px;">⌵</p>
+                    <a>Save</a>
+                </div>
+                <div class="card-info-bottom">
+                    <a>↗ google.com</a>
+                    <img draggable="false"
+                        src="https://cdn3.iconfinder.com/data/icons/iconset-1-1/24/icon_set_outlinder-10-256.png">
+                    <img draggable="false" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-more-256.png">
+                </div>
+            </div>
+            <img class="photo"
+            src="https://images.pexels.com/photos/3621104/pexels-photo-3621104.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="imagen9">
+        </div>
+        <div class="card-image" id="large" >
+            <div class="card-info" id="large">
+                <div class="card-info-top">
+                    <p>Profile</p>
+                    <p style="font-size: 25px; margin-top: 20px; margin-left: -40px;">⌵</p>
+                    <a>Save</a>
+                </div>
+                <div class="card-info-bottom">
+                    <a>↗ google.com</a>
+                    <img draggable="false"
+                        src="https://cdn3.iconfinder.com/data/icons/iconset-1-1/24/icon_set_outlinder-10-256.png">
+                    <img draggable="false" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-more-256.png">
+                </div>
+            </div>
+            <img class="photo" src="https://images.pexels.com/photos/267761/pexels-photo-267761.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="imagen19">
+        </div>
+        <div class="card-image" id="short">
+            <div class="card-info" id="short" >
+                <div class="card-info-top">
+                    <p>Profile</p>
+                    <p style="font-size: 25px; margin-top: 20px; margin-left: -40px;">⌵</p>
+                    <a>Save</a>
+                </div>
+                <div class="card-info-bottom">
+                    <a>↗ google.com</a>
+                    <img draggable="false"
+                        src="https://cdn3.iconfinder.com/data/icons/iconset-1-1/24/icon_set_outlinder-10-256.png">
+                    <img draggable="false" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-more-256.png">
+                </div>
+            </div>
+            <img class="photo" src="https://images.pexels.com/photos/3148452/pexels-photo-3148452.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="imagen7">
+        </div>
+        <div class="card-image" id="normal" >
+            <div class="card-info" id="normal" >
+                <div class="card-info-top">
+                    <p>Profile</p>
+                    <p style="font-size: 25px; margin-top: 20px; margin-left: -40px;">⌵</p>
+                    <a>Save</a>
+                </div>
+                <div class="card-info-bottom">
+                    <a>↗ google.com</a>
+                    <img draggable="false"
+                        src="https://cdn3.iconfinder.com/data/icons/iconset-1-1/24/icon_set_outlinder-10-256.png">
+                    <img draggable="false" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-more-256.png">
+                </div>
+            </div>
+            <img class="photo"
+            src="https://images.pexels.com/photos/54123/pexels-photo-54123.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="imagen8">
+        </div>
+        <div class="card-image" id="large" >
+            <div class="card-info" id="large">
+                <div class="card-info-top">
+                    <p>Profile</p>
+                    <p style="font-size: 25px; margin-top: 20px; margin-left: -40px;">⌵</p>
+                    <a>Save</a>
+                </div>
+                <div class="card-info-bottom">
+                    <a>↗ google.com</a>
+                    <img draggable="false"
+                        src="https://cdn3.iconfinder.com/data/icons/iconset-1-1/24/icon_set_outlinder-10-256.png">
+                    <img draggable="false" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-more-256.png">
+                </div>
+            </div>
+            <img class="photo" src="https://images.pexels.com/photos/73760/swimming-swimmer-female-race-73760.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="imagen26">
+        </div>
+
+     
+        
+    </div>
+
+
+      
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
 </body>
+
 </html>

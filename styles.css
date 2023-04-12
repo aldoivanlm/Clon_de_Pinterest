@@ -1,3 +1,400 @@
-h1{
-    color: red;
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  outline: none;
+}
+
+
+
+/* A PARTIR DE AQUI SON LOS ESTILOS PARA EL NAV */
+
+#navbar-pinterest {
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  padding: 20px 16px 16px 16px;
+  margin-bottom: 15px;
+}
+
+nav .logo {
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  margin-right: 7px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+nav .logo:hover {
+  background: #e3e3e3;
+}
+
+nav .button-home {
+  display: block;
+  background-color: rgb(18, 18, 18);
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  border-radius: 30px;
+  font-size: 18px;
+  padding: 15px;
+}
+
+nav .create-button {
+  display: flex;
+  border: none;
+  text-align: center;
+  align-items: baseline;
+  border-radius: 150px;
+  font-size: 18px;
+  padding: 20px;
+}
+
+.create-button a {
+  color: rgb(18, 18, 18);
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+
+
+nav .finder {
+  display: block;
+  width: 1550px;
+  height: 25px;
+  background-color: #e6e6e6;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/800px-Vector_search_icon.svg.png);
+  background-position: 15px 15px;
+  background-size: 16px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  outline: none;
+
+  border-radius: 150px;
+  border: none;
+  font-size: 16px;
+  padding-left: 40px;
+
+}
+
+
+nav .finder-query {
+  display: none;
+  width: 1550px;
+height: 25px;
+background-color: #e6e6e6;
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/800px-Vector_search_icon.svg.png);
+background-position: 15px 15px;
+background-size: 16px;
+background-repeat: no-repeat;
+padding: 12px 20px 12px 40px;
+outline: none;
+
+border-radius: 150px;
+border: none;
+font-size: 16px;
+padding-left: 40px;
+
+}
+
+
+nav .finder:hover {
+  background-color: #3333;
+}
+
+nav .finder:focus {
+  border: 4px solid #7bb5f0;
+  padding: 12px 20px;
+  background-image: none;
+}
+
+
+
+
+nav .icons-bar {
+  display: flex;
+  width: 180px;
+  margin-left: 15px;
+  margin-right: 30px;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+nav .svg-icon {
+  cursor: pointer;
+  border-radius: 150px;
+  padding: 10px;
+
+}
+
+nav .svg-icon:hover {
+  background: #e3e3e3;
+
+
+}
+
+
+nav img {
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+nav img:hover {
+  background: #e3e3e3;
+}
+
+/* HASTA AQUI SON ESTILOS PARA NAV */
+
+
+/* A PARTIR DE AQUI ESTILOS PARA EL MAIN */
+
+
+.question-sign {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 55px;
+  height: 55px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(0 0.2rem 0.30rem rgba(35, 35, 35, 0.15));
+}
+
+
+
+/* CONTENIDOS PARA TARJETAS */
+
+
+#content{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width:100%;
+  margin-top: 85px;
+  margin-bottom: 80px;
+  padding-left: 10px;
+}
+
+.container-general {
+
+  margin: 0;
+  padding: 0;
+  columns: 7 230px;
+  column-gap: 15px;
+ 
+
+
+}
+
+.card-image {
+
+  max-width: 230px;
+  height: 450px;
+  border-radius: 30px;
+  margin-bottom: 17px;
+  overflow: hidden;
+}
+
+
+.photo {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+
+}
+
+#short {
+  height: 300px;
+
+}
+
+#medium {
+  height: 450px;
+}
+
+
+#large {
+  height: 570px;
+}
+
+/* CONTENIDOS PARA EL HOVER DE LAS TARJETAS Y ELEMENTOS  */
+
+
+.card-info {
+  position: absolute;
+  display: flex;
+  align-content: space-between;
+  align-items: baseline;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 230px;
+  height: 450px;
+
+
+  background-color: rgba(0, 0, 0, 0.327);
+  opacity: 0;
+  border-radius: 30px;
+  cursor: zoom-in;
+  transition-duration: .1s;
+  transition-timing-function: ease-out;
+  user-select: none;
+}
+
+.card-info:hover {
+  opacity: 1;
+}
+
+
+/* CONTENIDOS PARA EL HOVER  PARTE SUPERIOR */
+
+.card-image .card-info-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 15px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.card-image .card-info-top p {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.card-image .card-info-top a {
+  color: white;
+  padding: 14px 17px;
+  font-weight: 450;
+  font-size: 16px;
+  border-radius: 100px;
+  cursor: pointer;
+  background: rgb(238, 1, 1);
+}
+
+.card-image .card-info-top a:hover {
+  background: #b80202;
+}
+
+/* CONTENIDOS PARA EL HOVER  PARTE INFERIOR */
+
+.card-image .card-info-bottom {
+  padding: 15px 10px;
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.card-image .card-info-bottom a {
+  padding: 5px 10px;
+  background: #efefef;
+  border-radius: 40px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.card-image .card-info-bottom a:hover {
+  background: white;
+}
+
+
+
+.card-image .card-info-bottom img {
+  width: 20px;
+  border-radius: 50%;
+  background: #efefef;
+  padding: 6px;
+  cursor: pointer;
+  margin: 0px 2px;
+}
+
+.card-image .card-info-bottom img:hover {
+  background: white;
+}
+
+
+
+
+
+
+
+/*  ESTILOS PARA MEDIA QUERY*/
+
+@media screen and (max-width: 768px) {
+
+
+
+  nav .finder {
+    display: none;
+    width: 1550px;
+    height: 25px;
+    background-color: #e6e6e6;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/800px-Vector_search_icon.svg.png);
+    background-position: 15px 15px;
+    background-size: 16px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    outline: none;
+  
+    border-radius: 150px;
+    border: none;
+    font-size: 16px;
+    padding-left: 40px;
+  
+  }
+ 
+  nav .finder-query {
+    display: block;
+    width: 40px;
+  height: 25px;
+  background-color: #e6e6e6;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/800px-Vector_search_icon.svg.png);
+  background-position: 15px 15px;
+  background-size: 16px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  outline: none;
+
+  border-radius: 150px;
+  margin-left: 20px;
+  border: none;
+  font-size: 16px;
+  padding-left: 40px;
+  
+  }
+
+
+
+
+
+  nav .create-button {
+    display: none;
+    border: none;
+    text-align: center;
+    align-items: baseline;
+    border-radius: 150px;
+    font-size: 18px;
+    padding: 20px;
+  }
+
+
+
+
 }
